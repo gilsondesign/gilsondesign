@@ -1,0 +1,355 @@
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: url(../images/body_bg.png) repeat;
+  font-family: 'Droid Sans', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	padding-bottom: 1px;
+}
+
+a:hover {
+	text-decoration: none;
+	vertical-align: baseline;
+	border-bottom: 1px solid @grayDarker;
+}
+
+
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+  	color: @grayDarker;
+	font-size: 3rem;
+    line-height: 4rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+	font-weight: 300;
+	text-shadow: 0px 2px 3px #fff;
+}
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    line-height: 1.714285714; /* 3rem */
+    margin-top: 2.2rem;
+    margin-bottom: 1.5rem;
+	color: @grayDark;
+	text-shadow: 0px 2px 3px #fff;
+}
+h3 {
+	margin-top:20px;
+    font-size: 1.3125rem;
+	text-transform:uppercase;
+}
+
+h4 {
+	margin:0px 0px 5px 0px;
+    font-size: 1.25rem;
+	line-height:1.25rem;
+	padding:0px;
+
+}
+
+p {
+	font-size: 1rem;
+	margin: 0;
+	/*  text-align: justify;*/
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.navigationMenu{
+    text-transform:uppercase;
+	text-align:center;
+	list-style-type: none;
+	margin-top:0px;
+	z-index:999;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+
+	li {	
+		display: inline;
+		padding-right: 10px;
+		padding-left:10px;
+	}
+	
+	a {	
+		color: @gray;
+		font-size:1em;
+		font-weight: 300;
+		border-bottom: 0px;
+		padding:8px;
+	}
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background: url(../images/Bolt.png);
+  background-size:18px 18px;
+  background-repeat: no-repeat;
+  background-color:@grayDarker;
+  
+  a { color:@grayLighter;}
+}
+
+
+
+
+    
+.disclaimer
+{
+    position:absolute;
+    bottom:10px;
+    float:right;}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+	width:100%;
+	float:left;
+	margin-bottom:20px;
+	margin-top:10px;}
+	
+	
+.gdbadge {
+	-webkit-box-shadow: 0 0 20px @white;
+	-moz-box-shadow: 0 0 20px @white;
+	box-shadow: 0 0 20px @white; 
+}
+
+.gdbadgeRow {
+	margin-bottom:30px;
+}
+
+	
+div.hr {
+  height: 1px;
+  background: url(../images/dashed-border.gif) top left repeat-x;
+}
+div.hr hr {
+  display: none;
+}
+	
+	
+.darksection {
+	background: @grayLighter;
+}	
+	
+    
+    
+.sectionHeading {
+    margin: 0px auto 0px auto;}
+    
+.homeSlice 
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform:uppercase;
+    font-size:3em;
+    line-height:45px;
+    text-align:center;
+    padding:50px;
+    color:#6b6b6b;
+ 
+ }
+ 
+.GDBadgeMiddle {
+    float:left;
+    background:url(../images/GD_Badge.png);
+    background-repeat:no-repeat;
+    margin:10px 0px;
+    background-color:Yellow;}
+
+.content-body-wrapper {
+    display:table;
+    border-collapse:collapse;
+    width:100%;}
+         
+.content-body {
+    display:table-row;}
+         
+.columnFill, .columnFill, .columnMiddle {
+    display:table-cell;
+    vertical-align:middle;}
+         
+.columnFill, .columnFill {
+    width:46.62393162393163%;}
+         
+.columnMiddle {
+    padding: 0px 10px;
+    width:6.75213675213675%;}
+
+  
+.content {
+    position: relative;
+    height: 100%;
+	padding:0px 0px 100px 0px;
+	}
+
+.topbar {
+	background-color: @grayDarker;
+	height:5px;
+	width:100%;
+	position:fixed;
+	top:0px;
+	z-index:999;
+	border-bottom:1px solid @grayLighter;
+	-webkit-box-shadow: 0 0 20px @white;
+	-moz-box-shadow: 0 0 20px @white;
+	box-shadow: 0 0 20px @white;}	
+	
+.intro {
+	position:absolute;
+	width: 25%;
+	left: 38.6%;
+	top: 20em;
+	color: #fff;
+	padding: 1.25rem;
+	line-height: 1.5em;
+	background: #0abdcf;
+	background: #000;}
+	
+
+#company{
+	padding-top:125px; 
+	padding-bottom:500px;
+	h2 {
+		margin-bottom:5rem;
+		text-align:center;
+	}
+}
+
+#services,
+#work,
+#workdetails,
+#contact,
+#footer
+{padding-top:60px}
+
+#map{border: 1px solid @grayLight;}
+
+#workdetails{
+	.clientdetails p {margin-bottom:28px;}
+}
+
+.acceptingWork {
+	background-color:@blue;
+	margin:30px 0px 30px 0px;
+	padding:15px;
+	display:inline-block;
+	
+	h2 {
+	margin-top: 0rem;
+    margin-bottom: 0rem;
+	color: @grayLighter;
+	text-shadow:none;
+	}
+}
+
+.showcase {
+	img{
+		-webkit-box-shadow: 0 0 5px @grayLighter;
+		-moz-box-shadow: 0 0 5px @grayLighter;
+		box-shadow: 0 0 8px @grayLight; 
+		margin-bottom:35px;
+	}
+}
+
+.back-to-main {
+    text-transform:uppercase;
+	text-align:center;
+	list-style-type: none;
+	margin-top:5px;
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	background:@grayDarker;
+	
+	a {color:@white;}
+	
+}
+
+
+.topBtn {
+	margin-bottom:-1px;
+    position: absolute;
+    left: 50%;
+	bottom:0px;
+    margin-left: -50px;
+    display:block;
+    font-size:15px;
+    color:@white;
+    text-align:center;
+    text-decoration:none;
+	background: @grayLight;
+	padding: 10px 10px 5px 10px;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	-webkit-box-shadow: 0 0 20px @white;
+	-moz-box-shadow: 0 0 20px @white;
+	box-shadow: 0 0 20px @white; }
+
+.topBtn:hover
+{}
+    
+    
+.contactFormField {
+    width:80%;}
+    
+.socialContact {
+    padding:10px;
+    margin:10px 0px;
+	overflow:hidden;
+    border:1px solid #d2d2d2;
+    background-color:#e6e6e6;}
+
+.socialContact p {
+	float:left;
+	margin-left:10px;
+	margin-top:6px;}
+   
+.socialicon {
+	float:left; }
+
+
+// -------------------------
+// ABOUT PAGE
+// -------------------------
+.aboutRow2 {
+    margin-top:50px;}
+    
+    
+#company .container 
+{
+
+}

@@ -1,0 +1,39 @@
+body {
+	background-color: #000000;
+	background-image: url(HomeBG.gif);
+}
+
+p 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000; 
+}
+
+A:link 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration:underline;
+}
+
+A:visited {text-decoration: none}
+A:active {text-decoration: none}
+A:hover {text-decoration: underline; color: #c6d700;}
+
+
+.message 
+{
+	position: absolute;
+	left: 65px;
+	top: 270px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
