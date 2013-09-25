@@ -9,7 +9,7 @@ body{
   padding: 0;
   background: url(../images/body_bg.png) repeat;
   font-family: 'Droid Sans', sans-serif;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 a {
@@ -32,7 +32,6 @@ a:hover {
 
 
 
-
 /* ==========================================================================
    Typography
    ========================================================================== */
@@ -48,6 +47,7 @@ h1 {
 	text-shadow: 0px 2px 3px #fff;
 }
 h2 {
+	font-size:1.75rem;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
     line-height: 1.714285714; /* 3rem */
@@ -91,51 +91,45 @@ p {
 	width:100%;
 	margin-left:auto;
 	margin-right:auto;
+	margin-bottom:0px;
+	background:@grayDarker;
+	padding:20px 0px;
 
 	li {	
 		display: inline;
-		padding-right: 10px;
-		padding-left:10px;
+		padding: 0px 15px;
 	}
 	
 	a {	
-		color: @gray;
+		color: @grayLight;
 		font-size:1em;
 		font-weight: 300;
 		border-bottom: 0px;
-		padding:8px;
+	}
+	a:hover {
+		color:@white;
 	}
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  background: url(../images/Bolt.png);
-  background-size:18px 18px;
-  background-repeat: no-repeat;
-  background-color:@grayDarker;
-  
-  a { color:@grayLighter;}
 }
 
-
-
-
-    
-.disclaimer
-{
+.disclaimer {
     position:absolute;
     bottom:10px;
-    float:right;}
+    float:right;
+}
 
 #logo {
+	display:block;
     max-width: 100%;
     height: auto;
 	width:100%;
-	float:left;
 	margin-bottom:20px;
-	margin-top:10px;}
-	
+	margin-top:20px;
+}	
 	
 .gdbadge {
 	-webkit-box-shadow: 0 0 20px @white;
@@ -146,37 +140,24 @@ p {
 .gdbadgeRow {
 	margin-bottom:30px;
 }
-
 	
 div.hr {
   height: 1px;
   background: url(../images/dashed-border.gif) top left repeat-x;
 }
+
 div.hr hr {
   display: none;
-}
-	
+}	
 	
 .darksection {
 	background: @grayLighter;
 }	
 	
-    
-    
+     
 .sectionHeading {
     margin: 0px auto 0px auto;}
     
-.homeSlice 
-{
-    font-family: 'Open Sans Condensed', sans-serif;
-    text-transform:uppercase;
-    font-size:3em;
-    line-height:45px;
-    text-align:center;
-    padding:50px;
-    color:#6b6b6b;
- 
- }
  
 .GDBadgeMiddle {
     float:left;
@@ -211,88 +192,27 @@ div.hr hr {
 	padding:0px 0px 100px 0px;
 	}
 
-.topbar {
-	background-color: @grayDarker;
-	height:5px;
-	width:100%;
-	position:fixed;
-	top:0px;
-	z-index:999;
-	border-bottom:1px solid @grayLighter;
-	-webkit-box-shadow: 0 0 20px @white;
-	-moz-box-shadow: 0 0 20px @white;
-	box-shadow: 0 0 20px @white;}	
-	
-.intro {
-	position:absolute;
-	width: 25%;
-	left: 38.6%;
-	top: 20em;
-	color: #fff;
-	padding: 1.25rem;
-	line-height: 1.5em;
-	background: #0abdcf;
-	background: #000;}
-	
-
 #company{
-	padding-top:125px; 
-	padding-bottom:500px;
+	padding-top:125px;
+	background-size: 100%;
+	background-repeat:no-repeat;
 	h2 {
-		margin-bottom:5rem;
+		margin-bottom:15rem;
 		text-align:center;
 	}
 }
 
 #services,
 #work,
-#workdetails,
 #contact,
 #footer
-{padding-top:60px}
+{padding-top:60px; position: relative;}
+
 
 #map{border: 1px solid @grayLight;}
 
 #workdetails{
 	.clientdetails p {margin-bottom:28px;}
-}
-
-.acceptingWork {
-	background-color:@blue;
-	margin:30px 0px 30px 0px;
-	padding:15px;
-	display:inline-block;
-	
-	h2 {
-	margin-top: 0rem;
-    margin-bottom: 0rem;
-	color: @grayLighter;
-	text-shadow:none;
-	}
-}
-
-.showcase {
-	img{
-		-webkit-box-shadow: 0 0 5px @grayLighter;
-		-moz-box-shadow: 0 0 5px @grayLighter;
-		box-shadow: 0 0 8px @grayLight; 
-		margin-bottom:35px;
-	}
-}
-
-.back-to-main {
-    text-transform:uppercase;
-	text-align:center;
-	list-style-type: none;
-	margin-top:5px;
-	width:100px;
-	margin-left:auto;
-	margin-right:auto;
-	padding:10px;
-	background:@grayDarker;
-	
-	a {color:@white;}
-	
 }
 
 
@@ -304,10 +224,10 @@ div.hr hr {
     margin-left: -50px;
     display:block;
     font-size:15px;
-    color:@white;
+    color:@grayLight;
     text-align:center;
     text-decoration:none;
-	background: @grayLight;
+	background: @grayDarker;
 	padding: 10px 10px 5px 10px;
 	-webkit-border-top-left-radius: 2px;
 	-webkit-border-top-right-radius: 2px;
@@ -317,12 +237,12 @@ div.hr hr {
 	border-top-right-radius: 2px;
 	-webkit-box-shadow: 0 0 20px @white;
 	-moz-box-shadow: 0 0 20px @white;
-	box-shadow: 0 0 20px @white; }
+	box-shadow: 0 0 20px @white; 
+	
+	&:hover {color:@white;}
+	}
 
-.topBtn:hover
-{}
-    
-    
+   
 .contactFormField {
     width:80%;}
     
@@ -338,18 +258,238 @@ div.hr hr {
 	margin-left:10px;
 	margin-top:6px;}
    
-.socialicon {
-	float:left; }
+.socialicon {float:left; }
 
 
-// -------------------------
-// ABOUT PAGE
-// -------------------------
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+.aboutRow2 { 
+	margin-top:50px;
+	img {width:200px;}
+	}
+    
+	
+.profilePic {
+	background-image:url(../images/aboutWho.jpg);
+	height: 500px;
+	background-repeat:no-repeat;
+}	
+
+.profileContainer {
+	background-image:url(../images/profilePic-bg.png);
+	background-repeat:repeat;
+	height:100%;
+}
+
+.message{
+	text-align: center;
+	font-size: 24px;
+	color: #f5f5f5;
+	
+	h4 {
+		line-height: 500px;
+		text-transform:uppercase;
+		font-size:1.4rem}
+}
+	
+
+    
+/* ==========================================================================
+   Portfolio
+   ========================================================================== */	
+#portfolio {
+	width:100%;
+	
+	.PortfolioImage {
+		background-repeat:no-repeat;
+		height:500px;
+		margin-bottom:20px;
+		background-size:100%;
+	}
+	
+	.gilsonBabyShower {background-image:url(../images/work/gilsonBabyShower-main.jpg);}
+	.maranoWedding {background-image:url(../images/work/maranoWedding-main.jpg);}
+	.revolush{background-image:url(../images/work/revolush-main.jpg);}
+	.pccoatings {background-image:url(../images/work/pccoatings-main.jpg);}
+	.brabantAnnouncement {background-image:url(../images/work/brabantAnnoucement-main.jpg);}
+	.braatz {background-image:url(../images/work/braatz-main.jpg);}
+	.conwayWedding {background-image:url(../images/work/conwayWedding-main.jpg);}
+	.kowalczykWedding {background-image:url(../images/work/kowalczykWedding-main.jpg);}
+	.verdeganBabyAnnoucments {background-image:url(../images/work/verdegan-main.jpg);}
+	.youngWedding {background-image:url(../images/work/youngWedding-main.jpg);}
+	.newbeginings {background-image:url(../images/work/newbeginings-main.jpg);}
+	.covaSolutions {background-image:url(../images/work/covaSolutions-main.jpg);}
+}
+	
+.sidebar {margin-left:55%;}
+
+.topbar {
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background-image:url(../images/topbar-bg.png)
+}
+
+.clientContent{
+	position:relative;
+	
+	#menu { position:absolute; margin:10px 0 0 0; width:35%;}
+	
+	.clientContentImages {margin-left:40%;}
+
+	img{
+		-webkit-box-shadow: 0 0 5px @grayLighter;
+		-moz-box-shadow: 0 0 5px @grayLighter;
+		box-shadow: 0 0 8px @grayLight; 
+		margin-bottom:35px;
+		}
+	
+	h2 {
+	margin-top: 0;
+	line-height: 1.25;}
+	
+	h4:nth-of-type(n+2) { margin-top:25px; } 	
+}
+	
+.back-to-main {
+    position: absolute;
+    left: 50%;
+	top:0px;
+    margin-left: -50px;
+    display:block;
+    font-size:15px;
+    color:@grayLight;
+    text-align:center;
+    text-decoration:none;
+	background: @grayDarker;
+	padding: 10px 10px 5px 10px;
+	-webkit-border-bottom-left-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-moz-border-radius-bottomright: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	-webkit-box-shadow: 0 0 10px @black;
+	-moz-box-shadow: 0 0 10px @black;
+	box-shadow: 0 0 10px @black;
+	text-transform:uppercase;
+	
+	&:hover {color:@white;}
+	}	
+	
+.next {
+	position: fixed;
+	right: 0;
+	padding:10px;
+	top: 55%;
+	text-align: right;
+	background: @grayDarker url(../img/icon-arrow-right.png) no-repeat left center;
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	border-top-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.previous {
+	position: fixed;
+	left: 0;
+	padding:10px;
+	top: 55%;
+	text-align: right;
+	background:  @grayDarker url(../img/icon-arrow-right.png) no-repeat left center;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+
+
+/* ==========================================================================
+   Media Querries
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+  /* 480 =================================================== */
+}
+@media only screen and (max-width: 600px) {
+  /* 600 =================================================== */
+}
+@media only screen and (max-width: 768px) {
+  /* 768 =================================================== */
+  h1 {
+   	font-size: 2.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+	}
+	
+.topbar {
+	position: fixed;
+	top: 0;
+	height: 50px;
+	background-color:@grayDarker;
+	.back-to-main {
+		-webkit-box-shadow: 0 0 0px #000;
+		-moz-box-shadow: 0 0 0px #000;
+		box-shadow: 0 0 0px #000;
+		}
+	}
+
+.container {
+	margin-left:10px;
+	margin-right:10px;
+}
+	
+#company{
+	padding-top:50px;
+	h2 {margin-bottom:75px;}
+	}
+
+#portfolio {
+	.BabyShowerMain { display:none;}
+	.gdbadgeRow  {display:none;}
+	.previous {top:0px; z-index: 1000;}
+	.next {top:0px; z-index: 1000;}
+	.clientContent {margin-top: 0px;}
+	#menu { width:100%; position:relative !important; margin-bottom:50px;}
+	.clientContentImages {margin-left:0px;}
+	.PortfolioImage {
+		height:200px;
+		margin-bottom:20px;
+		background-size:100%;
+	}
+}
+
+
+
 .aboutRow2 {
-    margin-top:50px;}
-    
-    
-#company .container 
-{
+ img {float:left; margin-top:15px; width:100px;}
+ h3, p { margin-left:125px;}
+}
+
+.profilePic {
+	height:300px;
+	h4 {
+		line-height:300px;
+		font-size:1rem;
+	}
+}
+
+
 
 }
+@media only screen and (max-width: 992px) {
+  /* 992 =================================================== */
+}
+@media only screen and (max-width: 1382px) {
+  /* 1382 =================================================== */
+}
+
+

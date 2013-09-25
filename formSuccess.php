@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<!-- Google Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- Reset iPhone Viewport & Initial Scale -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Gilson Design - form success</title>
+
+
+<!-- CSS (media="all") -->
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+
+</head>
+
+<body>
+
+<!--start Company Section --> 
+ <section id="formSuccess" >
+	<div class="container">
+    	<div class="hr"></div>
+        <div id="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+		<div class="hr"></div>
+		<div>	<br/>		
+		    <?php  
+  
+        // check for a successful form post  
+        if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";  
+  
+        // check for a form error  
+        elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";  
+		?>  <br/>
+           <a href="index.html" class="btn btn-primary" style="text-align:center" >RETURN TO SITE</a>
+          
+		</div>
+
+	</div>
+  </section>
+
+
+</body>
+</html>
