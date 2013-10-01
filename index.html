@@ -29,11 +29,11 @@
 <body>
 
 <!--start Company Section --> 
- <section id="company" >
+ <section id="company" data-type="background" data-speed="10">
 	<div class="container">
     	<div class="hr"></div>
         <div id="logo">
-            <img src="images/logo.png" alt="">
+            <img src="images/logo_2013.png" alt="">
         </div>
 		<div class="hr"></div>
 		<div>			
@@ -51,7 +51,7 @@
 
 <!--start About Section -->
 <div class="hr"><hr /></div> 
-<section id="services" class="content darksection">
+<section id="services" class="content darksection" data-type="background" data-speed="10">
 	<div class="container">
 		<div class="sectionHeading center"><h1>About</h1></div>
 		<p>Gilson Design is the playground and personal portfolio of Milwaukee based designer, Adam Gilson. I’m a designer with over ten years experience building websites, providing branding and creating custom print pieces for various clients and industries. From strategy to rich website design, I offer many services that can help.  Responsive design is a passion of mine and I’ll always favor usability over needless decoration.  I currently work at <a href="http://zywave.com/" target="_blank">Zywave</a>, where I get to collaborate with talented people building software for the insurance and financial industries.</p>
@@ -313,6 +313,9 @@ jQuery(document).ready(function($) {
 });
 </script>
 
+
+
+
 <script>
 var header = document.querySelector('.navigationMenu');
 var origOffsetY = header.offsetTop;
@@ -324,6 +327,8 @@ function onScroll(e) {
 
 document.addEventListener('scroll', onScroll);
 </script>
+
+
 
 
 <script type="text/javascript">
