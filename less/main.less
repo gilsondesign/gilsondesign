@@ -52,7 +52,7 @@ h2 {
 	font-weight: 300;
     line-height: 1.714285714; /* 3rem */
     margin-top: 2.2rem;
-    margin-bottom: 1.5rem;
+//    margin-bottom: 1.5rem;
 	color: @grayLighter;
 //	text-shadow: 0px 2px 3px #fff;
 }
@@ -86,18 +86,20 @@ p {
     text-transform:uppercase;
 	text-align:center;
 	list-style-type: none;
-	margin-top:0px;
+	margin-top:50px;
 	z-index:999;
 	width:100%;
 	margin-left:auto;
+	display:inline-block;
 	margin-right:auto;
 	margin-bottom:0px;
-	background:@grayDarker;
-	padding:20px 0px;
 
 	li {	
 		display: inline;
-		padding: 0px 15px;
+		padding: 15px;
+		border: 1px solid #bada55;
+		border-radius:5px;
+		margin:0px 10px;
 	}
 	
 	a {	
@@ -105,6 +107,7 @@ p {
 		font-size:1em;
 		font-weight: 300;
 		border-bottom: 0px;
+		
 	}
 	a:hover {
 		color:@white;
@@ -195,12 +198,13 @@ div.hr hr {
 
 #company{
 	padding-top:125px;
+	padding-bottom:125px;
 	background-size: 100%;
 	background-color:@grayBlue;
 	background-repeat:no-repeat;
 	position: relative;
 	h2 {
-		margin-bottom:15rem;
+		margin-bottom:20px;
 		text-align:center;
 	}
 }

@@ -29,7 +29,7 @@ $(document).ready(function(){
 		
 }); // window scroll Ends
 
- });	
+});	
 
 }); 
 /* 
@@ -38,3 +38,23 @@ $(document).ready(function(){
 
 document.createElement("article");
 document.createElement("section");
+
+
+jQuery(document).ready(function($) {
+ 
+	$(".scroll").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+	});
+});
+
+
+var header = document.querySelector('.navigationMenu');
+var origOffsetY = header.offsetTop;
+
+function onScroll(e) {
+  window.scrollY >= origOffsetY ? header.classList.add('sticky') :
+                                  header.classList.remove('sticky');
+}
+
+document.addEventListener('scroll', onScroll);

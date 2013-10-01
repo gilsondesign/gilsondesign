@@ -10,22 +10,14 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 <title>Gilson Design</title>
 <meta name="description" content="Web and print design portfolio and playground for milwaukee based designer">
-<meta name="keywords" content="gilson, design,, print, branding,,responsive, Milwaukee, Wisconsin, high quality website design, interface, design, build, development, designer, developer, adam gilson, pixel perfect, portfolio">
-
+<meta name="keywords" content="gilson, design, print, branding, responsive, Milwaukee, Wisconsin, high quality website design, interface, design, build, development, designer, developer, adam gilson, pixel perfect, portfolio">
 
 <!-- CSS (media="all") -->
 <link rel="stylesheet" type="text/css" href="css/fonts.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-<!--<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>-->
-<!-- HTML5 old IE enabling script -->
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
 </head>
-
 <body>
 
 <!--start Company Section --> 
@@ -36,12 +28,7 @@
             <img src="images/logo_2013.png" alt="">
         </div>
 		<div class="hr"></div>
-		<div>			
-		   <h2>A Milwaukee based designer who is working hard to make you look good.  Make sure to <a href="#contact" class="scroll">get in touch</a> if looking good is your goal.</h2>
-		</div>
-
-	</div>
-    <div class="hr"><hr /></div> 
+		<h2>A Milwaukee based designer who is working hard to make you look good.  Make sure to <a href="#contact" class="scroll">get in touch</a> if looking good is your goal.</h2>
         <ul class="navigationMenu">
 			<li><a href="#services" class="scroll" >ABOUT</a></li>
 			<li><a href="#work" class="scroll">WORK</a></li>
@@ -98,6 +85,11 @@
         
 			<ul class="thumbnails">
 				<li class="span3">
+					<a href="work/covasolutions-web.html" class="thumbnail">
+						<img src="images/work/Web_covasolutions_thumb.jpg" />
+					</a>
+				</li>
+                <li class="span3">
 					<a href="work/gilson-babyshower.html" class="thumbnail">
 						<img src="images/work/gilsonbaby_thumb.jpg" />
 					</a>
@@ -202,28 +194,7 @@
                             <button type="submit" class="btn btn-primary">Send</button>  
                         </div>  
                     </form> 
-                
-                
-               <!-- <form action="contact.php" method="POST" enctype="multipart/form-data"  name="EmailTestForm">
-					<p>
-						<label for="name">Name </label>
-						<input name="name" type="text" id="name" class="contactFormField"/>
-					 </p>
-					<p>
-						<label for="email">Email </label>
-						<input name="name" type="text" id="email" class="contactFormField"/>
-					</p>
-					<p>
-						<label for="email">Message </label>
-						<textarea name="text" rows="8" class="contactFormField"></textarea>
-					</p>
-					
-                    <p>
-						<input value="Send" type="submit" class="btn btn-primary" id="Send"/>
-					</p>
-                   
-				</form>-->
-			</div>
+            </div>
 			<div class="span6">
 				<h2>Elsewhere on the web</h2>
 				<p>Email is typically the best way to catch me.  However, you can also contact or follow me on the following sites.</p><br/>
@@ -291,48 +262,8 @@
 <script src="jquery/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/google-code-prettify/prettify.js"></script>
-<!-- <script src="jquery/jquery.rm.js"></script>
+<script src="js/script.js"></script>
 <script type="text/javascript">
-
-$('#company').responsiveMeasure({
-      idealLineLength: 80,
-      ratio: 4/3,
-      minimumFontSize: 16,
-      sampleText: "n"   // I found that 'n' acutally gives you the most acurate measure (it varies a lot) — you can put an actual string of your text or whatever you want, and we have a default as well
-
-    });
-
-</script> -->
-<script>
-jQuery(document).ready(function($) {
- 
-	$(".scroll").click(function(event){		
-		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-	});
-});
-</script>
-
-
-
-
-<script>
-var header = document.querySelector('.navigationMenu');
-var origOffsetY = header.offsetTop;
-
-function onScroll(e) {
-  window.scrollY >= origOffsetY ? header.classList.add('sticky') :
-                                  header.classList.remove('sticky');
-}
-
-document.addEventListener('scroll', onScroll);
-</script>
-
-
-
-
-<script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-40055534-1']);
   _gaq.push(['_trackPageview']);
@@ -342,10 +273,7 @@ document.addEventListener('scroll', onScroll);
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
-
-
 
 </body>
 </html>
