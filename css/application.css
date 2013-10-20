@@ -81,8 +81,6 @@ html {
   /* 1 */
 
   -ms-text-size-adjust: 100%;
-  /* 2 */
-
   -webkit-text-size-adjust: 100%;
   /* 2 */
 
@@ -513,22 +511,17 @@ p {
   bottom: 10px;
   float: right;
 }
+#gd-icon {
+  height: 75px;
+  margin-bottom: 20px;
+}
 #logo {
   display: block;
   max-width: 100%;
   height: auto;
   width: 100%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: center;
-}
-.gdbadge {
-  -webkit-box-shadow: 0 0 20px #ffffff;
-  -moz-box-shadow: 0 0 20px #ffffff;
-  box-shadow: 0 0 20px #ffffff;
-}
-.gdbadgeRow {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 div.hr {
   height: 1px;
@@ -542,13 +535,6 @@ div.hr hr {
 }
 .sectionHeading {
   margin: 0px auto 0px auto;
-}
-.GDBadgeMiddle {
-  float: left;
-  background: url(../images/GD_Badge.png);
-  background-repeat: no-repeat;
-  margin: 10px 0px;
-  background-color: Yellow;
 }
 .content-body-wrapper {
   display: table;
@@ -585,9 +571,11 @@ div.hr hr {
   background-repeat: no-repeat;
   position: relative;
   height: 100vh;
+  text-align: center;
 }
 #company h2 {
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 #company a {
@@ -901,9 +889,6 @@ div.hr hr {
     margin-bottom: 75px;
   }
   #portfolio .BabyShowerMain {
-    display: none;
-  }
-  #portfolio .gdbadgeRow {
     display: none;
   }
   #portfolio .previous {
