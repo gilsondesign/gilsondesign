@@ -1,15 +1,19 @@
+
+*:before,
+*:after { @include box-sizing(border-box); }
+
 html {
-    font-size: 100%; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    -ms-text-size-adjust: 100%; /* 2 */
+    color: @text-color;
+    font-family: @font-family-sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
 }
 
 body{
   margin: 0;
   padding: 0;
   background: url(../images/body_bg.png) repeat;
-  font-family: 'Droid Sans', sans-serif;
-  line-height: 1.8;
 }
 
 a {
@@ -28,6 +32,34 @@ a:hover {
 	text-decoration: none;
 	vertical-align: baseline;
 	border-bottom: 1px solid @grayDarker;
+}
+
+
+[class*="icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location:before {
+	content: "\e600";
+}
+.icon-coin:before {
+	content: "\e601";
+}
+.icon-calendar:before {
+	content: "\e602";
+}
+.icon-question:before {
+	content: "\e603";
 }
 
 
@@ -71,7 +103,6 @@ h4 {
 }
 
 p {
-	font-size: 1rem;
 	margin: 0;
 	/*  text-align: justify;*/
 	-webkit-hyphens: auto;
@@ -82,35 +113,37 @@ p {
 /* ==========================================================================
    Navigation
    ========================================================================== */
-.navigationMenu{
+.navigationMenu {
+	background-color:@grayBlueDark;
     text-transform:uppercase;
 	text-align:center;
 	list-style-type: none;
-	margin-top:50px;
 	z-index:999;
 	width:100%;
-	margin-left:auto;
 	display:inline-block;
 	margin-right:auto;
 	margin-bottom:0px;
-
-	li {	
-		display: inline;
-		padding: 15px;
-		border: 1px solid #bada55;
-		border-radius:5px;
-		margin:0px 10px;
-	}
+	position: fixed;
+	top: 0;
 	
-	a {	
-		color: @grayLight;
-		font-size:1em;
-		font-weight: 300;
-		border-bottom: 0px;
+	ul { margin:0px;
+		li {	
+			display: inline;
+		}
 		
-	}
-	a:hover {
-		color:@white;
+		a {	
+			color: @gray-light;
+			font-size:1em;
+			font-weight: 300;
+			border-bottom: 0px;
+			padding: 10px;
+			display: inline-block;
+		}
+		a:hover {
+			color:@lime;
+			border-bottom: 0px;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -203,10 +236,12 @@ div.hr hr {
 	background-color:@grayBlue;
 	background-repeat:no-repeat;
 	position: relative;
+	height: 100vh;
 	h2 {
 		margin-bottom:20px;
 		text-align:center;
 	}
+	a {color:@lime;}
 }
 
 #services,
@@ -258,7 +293,8 @@ div.hr hr {
     margin:10px 0px;
 	overflow:hidden;
     border:1px solid #d2d2d2;
-    background-color:#e6e6e6;}
+    background-color:#e6e6e6;
+}
 
 .socialContact p {
 	float:left;
@@ -303,8 +339,10 @@ div.hr hr {
 	
 
 
-
-
+.icon-location {font-size:60px;}
+.icon-calendar {font-size:60px;}
+.icon-question {font-size:60px;}
+.icon-coin {font-size:60px;}
 
 
 
