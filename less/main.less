@@ -13,25 +13,26 @@ html {
 body{
   margin: 0;
   padding: 0;
-  background: url(../images/body_bg.png) repeat;
 }
 
 a {
 	font-family: 'Open Sans', sans-serif;
+	color: @grayBlueDark;
 	text-decoration: none;
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-	border-bottom: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid @lime;
 	padding-bottom: 1px;
 }
 
 a:hover {
+	color: @lime;
+	background: @grayBlue;
 	text-decoration: none;
 	vertical-align: baseline;
-	border-bottom: 1px solid @grayDarker;
 }
 
 
@@ -232,6 +233,18 @@ div.hr hr {
 		text-align:center;
 	}
 	a {color:@lime;}
+	
+	.scroll {
+		width: 82px;
+		height: 82px;
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		margin: 0 0 0 -41px;
+		z-index :10;
+		border-bottom:0;
+		text-indent: -9999px;
+	}
 }
 
 #services,
@@ -318,24 +331,19 @@ div.hr hr {
 
 .message{
 	text-align: center;
-	font-size: 24px;
 	color: #f5f5f5;
 	
 	h4 {
 		line-height: 500px;
 		text-transform:uppercase;
-		font-size:1.4rem}
+		font-size: 24px;
+	}
 }
 	
-
-
 .icon-location {font-size:60px;}
 .icon-calendar {font-size:60px;}
 .icon-question {font-size:60px;}
 .icon-coin {font-size:60px;}
-
-
-
 
 
 #homeTEST { 
