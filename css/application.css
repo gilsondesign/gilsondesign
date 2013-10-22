@@ -4408,31 +4408,6 @@ a:hover {
   text-decoration: none;
   vertical-align: baseline;
 }
-[class*="icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-location:before {
-  content: "\e600";
-}
-.icon-coin:before {
-  content: "\e601";
-}
-.icon-calendar:before {
-  content: "\e602";
-}
-.icon-question:before {
-  content: "\e603";
-}
 /* ==========================================================================
    Typography
    ========================================================================== */
@@ -4571,6 +4546,13 @@ div.hr hr {
   height: 100%;
   padding: 0px 0px 100px 0px;
 }
+#services,
+#work,
+#contact,
+#footer {
+  padding-top: 60px;
+  position: relative;
+}
 #company {
   padding-top: 125px;
   padding-bottom: 125px;
@@ -4590,22 +4572,20 @@ div.hr hr {
   color: #d5e14d;
 }
 #company .scroll {
-  width: 82px;
-  height: 82px;
+  font-size: 16px;
   position: absolute;
   bottom: 30px;
   left: 50%;
+  color: #1d2c33;
   margin: 0 0 0 -41px;
   z-index: 10;
   border-bottom: 0;
-  text-indent: -9999px;
 }
-#services,
-#work,
-#contact,
-#footer {
-  padding-top: 60px;
-  position: relative;
+#company .scroll span {
+  font-size: 30px;
+}
+#contact .form-actions {
+  margin-top: 20px;
 }
 #map {
   border: 1px solid #999999;
@@ -4685,7 +4665,7 @@ div.hr hr {
   text-transform: uppercase;
   font-size: 24px;
 }
-.icon-location {
+.icon-map-marker {
   font-size: 60px;
 }
 .icon-calendar {
@@ -4696,42 +4676,6 @@ div.hr hr {
 }
 .icon-coin {
   font-size: 60px;
-}
-#homeTEST {
-  background: url(../images/home-bg.jpg) 50% 0 repeat fixed;
-  min-height: 1000px;
-  height: 1000px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-}
-#homeTEST article {
-  height: 458px;
-  position: absolute;
-  text-align: center;
-  top: 350px;
-  color: white;
-  font-size: 25px;
-  width: 100%;
-}
-#aboutTEST {
-  background: url(../images/about-bg.jpg) 50% 0 repeat fixed;
-  min-height: 1000px;
-  height: 1000px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-}
-#aboutTEST article {
-  height: 458px;
-  position: absolute;
-  text-align: center;
-  top: 150px;
-  width: 100%;
 }
 /* ==========================================================================
    Portfolio
