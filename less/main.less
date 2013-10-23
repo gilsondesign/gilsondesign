@@ -211,18 +211,51 @@ div.hr hr {
 	}
 	a { color: @lime;}
 	
-	.scroll {
-		font-size:16px;
+	#scroll-down-handle {
+		
 		position: absolute;
 		bottom: 30px;
 		left: 50%;
-		color: @grayBlueDark;
 		margin: 0 0 0 -41px;
 		z-index :10;
 		border-bottom:0;
-
-		span {font-size:30px;}
+		
+		p {
+			font-size:16px;
+			margin-bottom:10px;
+			color: @grayBlueDark;
+		}
+		
+		span {
+			font-size:30px;
+			color: @grayBlue;
+			background-color: @grayBlueDark;
+			box-shadow: 0 0 0 5px @grayBlueDark;
+		//	border-radius: 50%;
+			
+			&:hover {
+				cursor: pointer; 
+				-moz-animation:bounceOut .4s linear;
+				-webkit-animation:bounceOut .4s
+			}
+		}
 	}
+}
+
+@-moz-keyframes bounceOut {
+        0%{ box-shadow: 0 0 0 4px @grayBlueDark; opacity:1;}
+        25%{ box-shadow: 0 0 0 1px @grayBlueDark; opacity:1;}
+        50%{ box-shadow: 0 0 0 7px @grayBlueDark; opacity:1; }
+        75%{ box-shadow: 0 0 0 4px @grayBlueDark; opacity:1;}
+        100%{ box-shadow: 0 0 0 5px @grayBlueDark; opacity:1;}
+}
+
+@-webkit-keyframes bounceOut {
+        0%{ box-shadow: 0 0 0 4px @grayBlueDark; opacity:1;}
+        25%{ box-shadow: 0 0 0 1px @grayBlueDark; opacity:1;}
+        50%{ box-shadow: 0 0 0 7px @grayBlueDark; opacity:1; }
+        75%{ box-shadow: 0 0 0 4px @grayBlueDark; opacity:1;}
+        100%{ box-shadow: 0 0 0 5px @grayBlueDark; opacity:1;}
 }
 
 #contact {
@@ -260,8 +293,12 @@ div.hr hr {
 	-moz-box-shadow: 0 0 20px @white;
 	box-shadow: 0 0 20px @white; 
 	
-	&:hover {color:@white;}
+	&:hover {
+		color:@lime;
+		padding-bottom:10px;
+		transition:.1s linear;
 	}
+}
 
    
 .contactFormField {
