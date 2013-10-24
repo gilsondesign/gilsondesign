@@ -4395,12 +4395,11 @@ a {
   color: #1d2c33;
   text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 4px 0;
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
   border-bottom: 1px solid #d5e14d;
-  padding-bottom: 1px;
 }
 a:hover {
   color: #d5e14d;
@@ -4429,12 +4428,12 @@ h2 {
   /* 3rem */
 
   margin-top: 2.2rem;
-  color: #eeeeee;
 }
 h3 {
-  margin-top: 20px;
-  font-size: 1.3125rem;
+  margin-bottom: 10px;
+  font-size: 16px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 h4 {
   margin: 0px 0px 5px 0px;
@@ -4449,6 +4448,7 @@ p {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
+  line-height: 1.65;
 }
 /* ==========================================================================
    Navigation
@@ -4488,11 +4488,6 @@ p {
 .sticky {
   position: fixed;
   top: 0;
-}
-.disclaimer {
-  position: absolute;
-  bottom: 10px;
-  float: right;
 }
 #gd-icon {
   height: 75px;
@@ -4565,8 +4560,8 @@ div.hr hr {
 }
 #company h2 {
   margin-top: 50px;
-  margin-bottom: 50px;
   text-align: center;
+  color: #eeeeee;
 }
 #company a {
   color: #d5e14d;
@@ -4676,8 +4671,11 @@ div.hr hr {
   padding-bottom: 10px;
   transition: .1s linear;
 }
-.contactFormField {
-  width: 80%;
+.form-horizontal .control-label {
+  margin-bottom: 5px;
+}
+.form-horizontal .form-control {
+  margin-bottom: 10px;
 }
 .socialContact {
   padding: 10px;
@@ -4697,6 +4695,9 @@ div.hr hr {
 /* ==========================================================================
    About Page
    ========================================================================== */
+#services h3 {
+  margin-top: 20px;
+}
 .aboutRow2 {
   margin-top: 50px;
 }
@@ -4869,6 +4870,16 @@ div.hr hr {
   -moz-border-radius-bottomright: 3px;
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+.btn-primary {
+  background-color: #253942;
+  border-color: #253942;
+  color: #999999;
+}
+.btn-primary:hover {
+  background-color: #253942;
+  border-color: #253942;
+  color: #d5e14d;
 }
 /* ==========================================================================
    Media Querries
