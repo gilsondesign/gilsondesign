@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Portfolio
+   ========================================================================== */	
+#portfolio {
+	width:100%;
+	
+	a {border-bottom: 0;}
+	
+	.PortfolioImage {
+		background-repeat:no-repeat;
+		height:500px;
+		margin-bottom:20px;
+		background-size:100%;
+	}
+	
+	.gilsonBabyShower {background-image:url(../../images/work/gilsonBabyShower-main.jpg);}
+	.maranoWedding {background-image:url(../../images/work/maranoWedding-main.jpg);}
+	.revolush{background-image:url(../../images/work/revolush-main.jpg);}
+	.pccoatings {background-image:url(../../images/work/pccoatings-main.jpg);}
+	.brabantAnnouncement {background-image:url(../../images/work/brabantAnnoucement-main.jpg);}
+	.braatz {background-image:url(../../images/work/braatz-main.jpg);}
+	.conwayWedding {background-image:url(../../images/work/conwayWedding-main.jpg);}
+	.kowalczykWedding {background-image:url(../../images/work/kowalczykWedding-main.jpg);}
+	.verdeganBabyAnnoucments {background-image:url(../../images/work/verdegan-main.jpg);}
+	.youngWedding {background-image:url(../../images/work/youngWedding-main.jpg);}
+	.newbeginings {background-image:url(../../images/work/newbeginings-main.jpg);}
+	.covaSolutions {background-image:url(../../images/work/covaSolutions-main.jpg);}
+}
+	
+.sidebar {margin-left:55%;}
+
+.topbar {
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background-image:url(../../images/topbar-bg.png)
+}
+
+.clientContent{
+	position:relative;
+	
+	#menu { position:absolute; margin:10px 0 0 0; width:35%;}
+	
+	.clientContentImages {margin-left:40%;}
+
+	img{
+		-webkit-box-shadow: 0 0 5px $grayLighter;
+		-moz-box-shadow: 0 0 5px $grayLighter;
+		box-shadow: 0 0 8px $grayLight; 
+		margin-bottom:35px;
+		}
+	
+	h2 {
+	margin-top: 0;
+	line-height: 1.25;}
+	
+	h4:nth-of-type(n+2) { margin-top:25px; } 	
+}
+	
+.back-to-main {
+    position: absolute;
+    left: 50%;
+	top:0px;
+    margin-left: -50px;
+    display:block;
+    font-size:15px;
+    color:$grayLight;
+    text-align:center;
+    text-decoration:none;
+	background: $grayDarker;
+	padding: 10px 10px 5px 10px;
+	-webkit-border-bottom-left-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-moz-border-radius-bottomright: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	-webkit-box-shadow: 0 0 10px $black;
+	-moz-box-shadow: 0 0 10px $black;
+	box-shadow: 0 0 10px $black;
+	text-transform:uppercase;
+	
+	&:hover {color:$white;}
+	}	
+	
+.next {
+	position: fixed;
+	right: 0;
+	padding:10px;
+	top: 55%;
+	text-align: right;
+	background: $grayDarker url(../img/icon-arrow-right.png) no-repeat left center;
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	border-top-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.previous {
+	position: fixed;
+	left: 0;
+	padding:10px;
+	top: 55%;
+	text-align: right;
+	background:  $grayDarker url(../img/icon-arrow-right.png) no-repeat left center;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}

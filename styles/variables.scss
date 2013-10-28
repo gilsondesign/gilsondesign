@@ -1,0 +1,105 @@
+//---------------------------------------------------
+// Variables
+// --------------------------------------------------
+[class*="icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-sign-down:before {
+	content: "\e600";
+}
+.icon-calendar:before {
+	content: "\e604";
+}
+.icon-map-marker:before {
+	content: "\e606";
+}
+.icon-question:before {
+	content: "\e608";
+}
+.icon-coin:before {
+	content: "\e609";
+}
+
+
+// --------------------------------------------------
+// Global values
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------------------------------
+$black:                 #000;
+$grayDarker:            #253942;
+$grayDark:              #333;
+$gray:                  #555;
+$grayLight:             #999;
+$grayLighter:           #eee;
+$white:                 #fff;
+
+
+// Accent colors
+// --------------------------------------------------
+$lime:					#d5e14d;
+$grayBlue:              #253942;
+$grayBlueDark:          #1d2c33;
+
+
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%); // #222
+$gray-dark:              lighten(#000, 20%);   // #333
+$gray:                   lighten(#000, 33.5%); // #555
+$gray-light:             lighten(#000, 60%);   // #999
+$gray-lighter:           lighten(#000, 93.5%); // #eee
+
+// Brand colors
+// -------------------------
+
+$brand-primary:         #428bca;
+$brand-success:         #5cb85c;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
+$brand-info:            #5bc0de;
+
+// Scaffolding
+// -------------------------
+
+$body-bg:               #fff;
+$text-color:            $gray-dark;
+
+// Links
+// -------------------------
+
+$link-color:            $brand-primary;
+$link-hover-color:      darken($link-color, 15%);
+
+// Typography
+// -------------------------
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
+
+$font-size-base:          15px;
+$font-size-large:         ceil($font-size-base * 1.25); // ~18px
+$font-size-small:         ceil($font-size-base * 0.85); // ~12px
+
+$line-height-base:        1.428571429; // 20/14
+$line-height-computed:    floor($font-size-base * $line-height-base); // ~20px
+
+$headings-font-family:    $font-family-base;
+$headings-font-weight:    500;
+$headings-line-height:    1.1;

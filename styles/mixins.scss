@@ -1,0 +1,22 @@
+// SexyGrid
+@mixin createGrid($columns: 1, $gutter: null) {
+    @if ($gutter != null) { margin: -($gutter / 2); }
+    @include clearfix;
+
+    > li {
+        float: left;
+        width: (100% / $columns);
+        @if ($gutter != null) { padding: ($gutter / 2); }
+    }
+}
+
+@mixin updateGrid($columns: null, $gutter: null) {
+    @if ($gutter != null) { margin: -($gutter / 2); }
+
+    @if ($columns != null) or ($gutter != null) {
+        > li {
+            @if ($columns != null) { width: (100% / $columns); }
+            @if ($gutter != null) { padding: ($gutter / 2); }
+        }
+    }
+}
