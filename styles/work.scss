@@ -3,6 +3,7 @@
    ========================================================================== */	
 #portfolio {
 	width:100%;
+	margin-top:75px;
 	
 	a {border-bottom: 0;}
 	
@@ -12,19 +13,6 @@
 		margin-bottom:20px;
 		background-size:100%;
 	}
-	
-	.gilsonBabyShower {background-image:url(../../images/work/gilsonBabyShower-main.jpg);}
-	.maranoWedding {background-image:url(../../images/work/maranoWedding-main.jpg);}
-	.revolush{background-image:url(../../images/work/revolush-main.jpg);}
-	.pccoatings {background-image:url(../../images/work/pccoatings-main.jpg);}
-	.brabantAnnouncement {background-image:url(../../images/work/brabantAnnoucement-main.jpg);}
-	.braatz {background-image:url(../../images/work/braatz-main.jpg);}
-	.conwayWedding {background-image:url(../../images/work/conwayWedding-main.jpg);}
-	.kowalczykWedding {background-image:url(../../images/work/kowalczykWedding-main.jpg);}
-	.verdeganBabyAnnoucments {background-image:url(../../images/work/verdegan-main.jpg);}
-	.youngWedding {background-image:url(../../images/work/youngWedding-main.jpg);}
-	.newbeginings {background-image:url(../../images/work/newbeginings-main.jpg);}
-	.covaSolutions {background-image:url(../../images/work/covaSolutions-main.jpg);}
 }
 	
 .sidebar {margin-left:55%;}
@@ -52,11 +40,11 @@
 		margin-bottom:35px;
 		}
 	
-	h2 {
+	h1 {
 	margin-top: 0;
-	line-height: 1.25;}
+	line-height: 1.15;}
 	
-	h4:nth-of-type(n+2) { margin-top:25px; } 	
+	p { margin-top:25px; } 	
 }
 	
 .back-to-main {

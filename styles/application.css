@@ -436,7 +436,6 @@ table {
    ========================================================================== */
 #portfolio {
   width: 100%;
-  margin-top: 75px;
 }
 #portfolio a {
   border-bottom: 0;
@@ -446,6 +445,42 @@ table {
   height: 500px;
   margin-bottom: 20px;
   background-size: 100%;
+}
+#portfolio .gilsonBabyShower {
+  background-image: url(../../images/work/gilsonBabyShower-main.jpg);
+}
+#portfolio .maranoWedding {
+  background-image: url(../../images/work/maranoWedding-main.jpg);
+}
+#portfolio .revolush {
+  background-image: url(../../images/work/revolush-main.jpg);
+}
+#portfolio .pccoatings {
+  background-image: url(../../images/work/pccoatings-main.jpg);
+}
+#portfolio .brabantAnnouncement {
+  background-image: url(../../images/work/brabantAnnoucement-main.jpg);
+}
+#portfolio .braatz {
+  background-image: url(../../images/work/braatz-main.jpg);
+}
+#portfolio .conwayWedding {
+  background-image: url(../../images/work/conwayWedding-main.jpg);
+}
+#portfolio .kowalczykWedding {
+  background-image: url(../../images/work/kowalczykWedding-main.jpg);
+}
+#portfolio .verdeganBabyAnnoucments {
+  background-image: url(../../images/work/verdegan-main.jpg);
+}
+#portfolio .youngWedding {
+  background-image: url(../../images/work/youngWedding-main.jpg);
+}
+#portfolio .newbeginings {
+  background-image: url(../../images/work/newbeginings-main.jpg);
+}
+#portfolio .covaSolutions {
+  background-image: url(../../images/work/covaSolutions-main.jpg);
 }
 
 .sidebar {
@@ -478,11 +513,11 @@ table {
   box-shadow: 0 0 8px #999999;
   margin-bottom: 35px;
 }
-.clientContent h1 {
+.clientContent h2 {
   margin-top: 0;
-  line-height: 1.15;
+  line-height: 1.25;
 }
-.clientContent p {
+.clientContent h4:nth-of-type(n+2) {
   margin-top: 25px;
 }
 
@@ -545,14 +580,10 @@ table {
 
 html {
   color: #333333;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1;
-}
-
-body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -577,7 +608,7 @@ a:hover {
    Typography
    ========================================================================== */
 h1 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #253942;
   font-size: 4rem;
   line-height: 4rem;
@@ -589,7 +620,7 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1.714285714;
   /* 3rem */
@@ -597,7 +628,6 @@ h2 {
 }
 
 h3 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin-bottom: 10px;
   font-size: 16px;
   text-transform: uppercase;
@@ -605,7 +635,6 @@ h3 {
 }
 
 h4 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin: 0px 0px 5px 0px;
   font-size: 1.25rem;
   line-height: 1.25rem;
@@ -869,15 +898,13 @@ div.hr hr {
   height: 100%;
 }
 #services .message {
-  position: relative;
+  text-align: center;
+  color: #f5f5f5;
 }
 #services .message h4 {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  font-size: 20px;
-  opacity: .25;
-  color: #f5f5f5;
+  line-height: 500px;
+  text-transform: uppercase;
+  font-size: 55px;
 }
 #services .icon-map-marker {
   font-size: 60px;
@@ -935,18 +962,21 @@ div.hr hr {
   right: 0;
 }
 #work .view h2 {
-  color: #1d2c33;
-  font-weight: bold;
+  text-transform: uppercase;
+  color: #d5e14d;
   text-align: center;
   position: relative;
   font-size: 17px;
+  padding: 10px;
+  background: #1d2c33;
   margin: 20px 0 0 0;
 }
 #work .view p {
   font-family: Georgia, serif;
+  font-style: italic;
   font-size: 12px;
   position: relative;
-  color: #253942;
+  color: #fff;
   padding: 10px 20px 20px;
   text-align: center;
 }
@@ -954,10 +984,8 @@ div.hr hr {
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
-  font-size: 10px;
   background: #1d2c33;
-  color: #d5e14d;
-  border-radius: 4px;
+  color: white;
   text-transform: uppercase;
   -webkit-box-shadow: 0 0 1px #000;
   -moz-box-shadow: 0 0 1px #000;
@@ -975,7 +1003,6 @@ div.hr hr {
   filter: alpha(opacity=0);
   opacity: 0;
   background-color: #d5e14d;
-  margin: 5px;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -1022,9 +1049,16 @@ div.hr hr {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+#work .view-thumbnail:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
 #work .view-thumbnail:hover .mask {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  opacity: .97;
+  opacity: 1;
 }
 #work .view-thumbnail:hover h2, #work .view-thumbnail:hover p, #work .view-thumbnail:hover a.info {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
